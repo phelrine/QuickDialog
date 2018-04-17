@@ -60,6 +60,7 @@
 #import "QAutoEntryElement.h"
 #import "QAutoEntryTableViewCell.h"
 #import "QDateEntryTableViewCell.h"
+#import "QBioElement.h"
 
 #import "QRootBuilder.h"
 

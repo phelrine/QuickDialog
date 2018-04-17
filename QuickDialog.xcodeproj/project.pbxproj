@@ -145,6 +145,8 @@
 		5C50EFADB34DF61735763BCF /* UIColor+ColorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E4D5FFEF3EC8D7D7C219 /* UIColor+ColorUtilities.m */; };
 		5C50EFC7D20A7FCD425BABB3 /* QAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E3F000B242CEBBE14FD1 /* QAppearance.m */; };
 		5C50EFD5861E1FE78AD17F06 /* QWebElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E93B5273C6D9050767C6 /* QWebElement.m */; };
+		8578C76B20859B9900A925EC /* QBioElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 8578C76A20859B9900A925EC /* QBioElement.h */; };
+		85E33F8C2084A98200A80A6F /* QBioElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E33F8A2084A98200A80A6F /* QBioElement.m */; };
 		D80B0E3813E052DF00FA85CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B0E3713E052DF00FA85CA /* UIKit.framework */; };
 		D80B0E3A13E052DF00FA85CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B0E3913E052DF00FA85CA /* Foundation.framework */; };
 		D80B0E3C13E052DF00FA85CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B0E3B13E052DF00FA85CA /* CoreGraphics.framework */; };
@@ -344,6 +346,8 @@
 		5C50EFCF000577B46FCADBB0 /* QuickDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickDialogController.h; sourceTree = "<group>"; };
 		5C50EFD565900926223F50D4 /* QMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMapViewController.m; sourceTree = "<group>"; };
 		5C50EFF907143A8841F8E239 /* QuickDialogController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QuickDialogController+Navigation.h"; sourceTree = "<group>"; };
+		8578C76A20859B9900A925EC /* QBioElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBioElement.h; sourceTree = "<group>"; };
+		85E33F8A2084A98200A80A6F /* QBioElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBioElement.m; sourceTree = "<group>"; };
 		D80B0E3313E052DF00FA85CA /* QuickDialogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDialogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80B0E3713E052DF00FA85CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D80B0E3913E052DF00FA85CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -554,6 +558,8 @@
 				5C50E9A0D370C639F09B3CB1 /* QuickDialogController+Animations.m */,
 				5C50EFF907143A8841F8E239 /* QuickDialogController+Navigation.h */,
 				5C50E31A761571C95BE42711 /* QuickDialogController+Navigation.m */,
+				85E33F8A2084A98200A80A6F /* QBioElement.m */,
+				8578C76A20859B9900A925EC /* QBioElement.h */,
 			);
 			path = quickdialog;
 			sourceTree = "<group>";
@@ -588,6 +594,14 @@
 			path = extras;
 			sourceTree = "<group>";
 		};
+		85E33F892084A64400A80A6F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5C50EB0025DCEF8A3740C477 /* QAppearance.h */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D80B0E2813E052DF00FA85CA = {
 			isa = PBXGroup;
 			children = (
@@ -597,6 +611,7 @@
 				D80B0E3413E052DF00FA85CA /* Products */,
 				5C50EF103443BF3C70224C57 /* extras */,
 				5C50E2CAC8EF7B5889FE94C3 /* quickdialog */,
+				85E33F892084A64400A80A6F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -759,6 +774,7 @@
 				5C50E5973F19FF274B78A313 /* QImageTableViewCell.h in Headers */,
 				5C50EE6859F0DF11DB441E6F /* QuickDialogDelegate.h in Headers */,
 				5C50EEEA8F0B388EE4449581 /* QuickDialogTableView.h in Headers */,
+				8578C76B20859B9900A925EC /* QBioElement.h in Headers */,
 				5C50EEA048E63824EFD25A03 /* QDecimalTableViewCell.h in Headers */,
 				5C50EDA4C6485BA776A63C6B /* QuickDialogController.h in Headers */,
 				5C50E5AB95CAA351E0BC23A1 /* QuickDialogDataSource.h in Headers */,
@@ -888,6 +904,7 @@
 				5C50E3D157CBB90B4C5E86F0 /* QTextField.m in Sources */,
 				5C50EFC7D20A7FCD425BABB3 /* QAppearance.m in Sources */,
 				5C50E5D1772A6CB1D2C04B78 /* QBadgeLabel.m in Sources */,
+				85E33F8C2084A98200A80A6F /* QBioElement.m in Sources */,
 				5C50E104CBB469B9FABC1F8C /* QRootBuilder.m in Sources */,
 				5C50E1A54C0AD03A42DE5921 /* QRootElement.m in Sources */,
 				5C50E591EF48510884B33491 /* QTextElement.m in Sources */,

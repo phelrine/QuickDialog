@@ -44,7 +44,7 @@
 	[subsection	addElement:[[QRadioItemElement alloc] init]];
 	[subsection	addElement:[[QTextElement alloc] init]];
 	[subsection	addElement:[[QWebElement alloc] init]];
-	
+
 	return subForm;
 }
 
@@ -70,6 +70,7 @@
 	[subsection	addElement:[[QRadioItemElement alloc] initWithKey:@"Key1"]];
 	[subsection	addElement:[[QTextElement alloc] initWithKey:@"Key1"]];
 	[subsection	addElement:[[QWebElement alloc] initWithKey:@"Key1"]];
+    [subsection addElement:[[QBioElement alloc] initWithKey:@"Key4"]];
 	
 	return subForm;
 }
@@ -204,6 +205,11 @@
     QMultilineElement *multiline = [[QMultilineElement alloc] initWithTitle:@"Multiline" value:@""];
     multiline.key = @"multiline";
     [controls addElement:multiline];
+    
+    // Bio
+    QBioElement *bioline = [[QBioElement alloc] initWithTitle:@"Bioline" value:@""];
+    bioline.key = @"bioline";
+    [controls addElement:bioline];
     
     QLabelElement *element2 = [[QLabelElement alloc] initWithTitle:@"Label Different Height" Value:@"70"];
     element2.height = 70;
@@ -580,6 +586,10 @@
     QMultilineElement *multiline = [QMultilineElement new];
     multiline.title = @"Multiline entry";
     [multilineSection addElement:multiline];
+    
+    QBioElement *bioline = [QBioElement new];
+    bioline.title = @"Bio entry";
+    [multilineSection addElement:bioline];
 
     [root addSection:multilineSection];
     [root addSection:traitsSection];
