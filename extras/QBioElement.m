@@ -21,14 +21,14 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = self.enabled ? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
     cell.textField.enabled = NO;
-    cell.textField.textAlignment = NSTextAlignmentCenter;
-    cell.textField.textColor = [UIColor colorWithRed:0 green:48/255 blue:72/255 alpha:1];
+    cell.textField.textAlignment = self.appearance.labelAlignment;
+    cell.textField.textColor = [UIColor colorWithRed:0 green:(48/255.0f) blue:(72/255.0f) alpha:1];
     UIFont *font = [UIFont fontWithName:@"HiraKakuProN-W3" size:13];
     if (!font) {
         font = [UIFont systemFontOfSize: 13];
     }
     cell.textField.font = font;
-
+    
     return cell;
 }
 
@@ -47,7 +47,7 @@
     textController.textView.autocapitalizationType = self.autocapitalizationType;
     textController.textView.returnKeyType = self.returnKeyType;
     textController.textView.editable = self.enabled;
-    textController.textView.textColor = [UIColor colorWithRed:0 green:48/255 blue:72/255 alpha:1];
+    textController.textView.textColor = [UIColor colorWithRed:0 green:(48/255.0f) blue:(72/255.0f) alpha:1];
     textController.textView.textAlignment = NSTextAlignmentCenter;
     UIFont *font = [UIFont fontWithName:@"HiraKakuProN-W3" size:13];
     if (!font) {
